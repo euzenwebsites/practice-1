@@ -10,6 +10,12 @@ body {
     line-height: 1.8em;
 }
 
+@media (min-width : 0px) {
+    body{
+        overflow-x: hidden !important;
+    }
+}
+
 
 .top-nav>a {
     text-decoration: none;
@@ -95,6 +101,9 @@ body {
     gap: 100px;
     align-items: center;
     margin: 0 auto;
+    object-fit: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .content {
@@ -205,43 +214,49 @@ body {
 .card-1 {
     /* background-image: url(images/card\ 1.jpg); */
     border: none;
-    height: 350px;
+    height: 310px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(images/card\ 1.jpg) !important;
+        url(images/card\ 2.jpg) !important;
     background-position: center;
     background-size: contain !important;
+    background-repeat: no-repeat !important;
 }
 
 .card-1:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(images/card\ 1.jpg) !important;
+        url(images/card\ 2.jpg) !important;
     background-position: center;
     background-size: contain !important;
+    background-repeat: no-repeat;
 }
 
 .card-2 {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(images/card\ 2.jpg) !important;
+        url(images/card\ 1.jpg) !important;
     border: none;
-    height: 350px;
+    height: 310px;
     background-position: center;
     background-size: contain !important;
+    background-repeat: no-repeat;
+    
 }
 
 .card-2:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(images/card\ 2.jpg) !important;
+        url(images/card\ 1.jpg) !important;
     background-position: center;
     background-size: contain !important;
+    background-repeat: no-repeat;
 }
 
 .card-3 {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url(images/card\ 3.jpg) !important;
     border: none;
-    height: 350px;
+    height: 310px;
     background-position: center;
     background-size: contain !important;
+    background-repeat: no-repeat;
 }
 
 .card-3:hover {
@@ -249,6 +264,7 @@ body {
         url(images/card\ 3.jpg) !important;
     background-position: center;
     background-size: contain !important;
+    background-repeat: no-repeat;
 }
 
 
@@ -466,10 +482,14 @@ hr {
         margin-top: 30px !important;
         width: 100%;
         margin: 0 auto;
+
     }
 
     .card {
         width: 90%;
+        height: 310px;
+        background-image: contain !important;
+        background-repeat: no-repeat !important;
     }
 
     .card-btn {
@@ -631,7 +651,18 @@ hr {
 
     .card {
         border: none;
-        height: 300px;
+        height: 310px;
+        background-position: center;
+        width: 90% !important;
+        background-size: contain !important;
+        margin: 0 auto;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .card:hover {
+        border: none;
+        height: 310px;
         background-position: center;
         width: 90% !important;
         background-size: contain !important;
